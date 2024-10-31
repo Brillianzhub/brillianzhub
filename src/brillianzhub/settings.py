@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'storages',
     'taggit',
     'ckeditor',
+    'realvista',
 
     'consult',
     'policies',
@@ -269,7 +270,6 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = reverse_lazy('home')
 LOGIN_URL = reverse_lazy('accounts:login')
 LOGOUT_URL = reverse_lazy('home')
-
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

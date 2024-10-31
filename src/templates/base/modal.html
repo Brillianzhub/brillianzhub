@@ -22,40 +22,14 @@
                             <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
                         </a>
                     </li>
-                    <li>
-                        <a href="{% url 'asset:portfolio_optimizer' %}">
-                            Investing
-                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
-                        </a>
-                    </li>
+
                     <li>
                         <a onclick="showCourses()">
                             Calculators
                             <img src="{% static 'icons/arrow_right.svg' %}" class="alignright" id="dropdown-arrow"
                                 name="1">
                         </a>
-                        <div id="course-link-div">
-                            <a href="{% url 'analyser:savings_calculator' %}">
-                                Compound Savings Calculator
-                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
-                            </a>
 
-                            <a href="{% url 'analyser:stock_return' %}">
-                                Stock Investment Calculator
-                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
-                            </a>
-
-                            <a href="{% url 'analyser:real_estate_roi' %}">
-                                Real Estate Calculator
-                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
-                            </a>
-
-                            <a href="{% url 'analyser:savings_target_calculator' %}">
-                                Savings Target Calculator
-                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
-                            </a>
-
-                        </div>
                     </li>
                     <li class="active-link">
                         <a href="#" class="active-page">
