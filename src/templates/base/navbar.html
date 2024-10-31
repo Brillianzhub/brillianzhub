@@ -1,0 +1,109 @@
+{% load static %}
+
+<header class="fixed-top a">
+    <nav class="container-fluid div-padding home-nav-bg-green desktop main-nav b">
+        <a href="{% url 'home' %}">
+            <img src="{% static 'images/logo/dnav_logo.png' %}" alt="Brillianzhub logo" class="img-fluid nav-logo b">
+        </a>
+
+        <div class="nav-links c">
+            <ul>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="{% url 'package:packages' %}">Investing</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Calculators
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="{% url 'analyser:savings_calculator' %}">
+                                    <img src="{% static 'icons/nav-money.svg' %}" class="img-fluid icon-course">&nbsp;
+                                    <span>Compound Savings Calculator</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="{% url 'analyser:stock_return' %}">
+                                    <img src="{% static 'icons/nav-stock.svg' %}" class="img-fluid icon-course">&nbsp;
+                                    <span>Stock Investment Calculator</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="{% url 'analyser:real_estate_roi' %}">
+                                    <img src="{% static 'icons/nav-investment.svg' %}"
+                                        class="img-fluid icon-course">&nbsp;
+                                    <span>Real Estate Investment Calculator</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="{% url 'analyser:savings_target_calculator' %}">
+                                    <img src="{% static 'icons/nav-investment.svg' %}"
+                                        class="img-fluid icon-course">&nbsp;
+                                    <span>Savings Target Calculator</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </li>
+
+                {% if request.user.is_authenticated %}
+                <li>
+                    <div class="dropdown account_btn">
+                        <button class="user-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="{% static 'icons/account_circle.svg' %}" class="img-fluid">
+                            &nbsp;
+                            {% if request.profile %}
+                            {{ request.user.profile.firstname }}
+                            {% else %}
+                            Complete Your Profile
+                            {% endif %}
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a href="{% url 'accounts:account-home' %}">My Account</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'accounts:logout' %}">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                </li>
+
+                {% else %}
+                <li class="btn-link">
+                    <a href="{% url 'accounts:login' %}" class="account_btn">Login
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header phone">
+        <nav class="vnav  home-nav-bg-green">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'images/logo/logoMenu.png' %}" alt="Brillianzhub logo" class="phone-header-logo">
+            </a>
+
+            <a href="" data-bs-toggle="modal" data-bs-target="#menuModal">
+                <img src="{% static 'icons/menu.svg' %}" class="nav__icon">
+            </a>
+        </nav>
+    </div>
+</header>

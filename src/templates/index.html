@@ -1,0 +1,353 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block navbar %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<main class="main">
+    <!-- Hero image -->
+    <div class="container-fluid hero-div div-padding bottom-margin home-nav-bg-green c">
+        <div class="grid-container-hero-div">
+            <div class="grid-item-hero-div a">
+                <div class="container-fluid hero-div-info c">
+                    <img src="{% static 'icons/path1960.svg' %}" class="img-fluid path-img">
+                    <h2 class="animation">Your Personal<br>Investment <br class="phone">Training Hub</h2>
+                    <p class="animation">Benefit from expert insights and time-tested <br class="desktop">strategies to
+                        achieve financial success and stability.</p>
+
+                    <div class="container-fluid hero-button-div p-0 b">
+                        <a href="#">
+                            <button class="filled-btn-lg animation">Browse Hub</button>
+                        </a>
+
+                        <a href="{% url 'consult:book_appointment' %}">
+                            <button class="out-fill-btn-lg animation">Book Consultation</button>
+                        </a>
+
+                    </div>
+
+                    <img src="{% static 'icons/savings.svg' %}" class="img-fluid savings-img animation desktop">
+                </div>
+
+            </div>
+
+            <div class="grid-item-hero-div a hero-img">
+                <img src="{% static 'images/sky-scrapper.png' %}" class="img-fluid hero-img2">
+
+                <img src="{% static 'icons/savings.svg' %}" class="img-fluid savings-img phone">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Who are We -->
+    <div class="container-fluid who-are-we-div div-padding bottom-margin c">
+        <div class="grid-container-who-are-we">
+            <div class="grid-item-who-are-we who-are-we-pix a">
+                <img src="{% static 'images/team-meeting.png' %}" class="img-fluid team-img">
+            </div>
+
+            <div class="grid-item-who-are-we a">
+                <div class="container-fluid who-are-we-info p-0 m-0 c">
+                    <h2 class="animation">Brillianzhub<h2>
+
+                            <h6 class="animation">We are...</h6>
+                            <p class="animation">
+                                Brillianzhub, a top financial coaching firm in Stuttgart. We <br
+                                    class="desktop">specialize in educating individuals on real estate and stock <br
+                                    class="desktop">investments, providing personalized coaching to help our <br
+                                    class="desktop">clients secure their financial future.
+                            </p>
+
+                            <p class="animation">
+                                Our dedicated team is committed to empowering you with <br class="desktop">the knowledge
+                                and tools needed for successful investments <br class="desktop">and financial
+                                well-being.
+                            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Why You Should Invest -->
+    <!-- Why You Should Invest -->
+    <div class="container-fluid why-invest-div div-padding  home-nav-bg-green b">
+        <h2 class="heading">Why you should invest</h2>
+        <div class="grid-container-why-invest">
+            <div class="why-invest why-invest-open phone">
+                <h2>01</h2>
+                <div class="why-invest-detail">
+                    <h6>Financial Literacy</h6>
+                    <p>
+                        Gaining investment knowledge enhances your financial literacy and understanding of market
+                        dynamics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why-invest desktop" id="why-invest1" onclick="whyInvestC(1)" onmouseover="whyInvest(1)"
+                onmouseout="closeWhyInvest()" title="1">
+                <h2>01</h2>
+                <h6 id="outside-heading1">Financial Literacy</h6>
+                <div class="why-invest-detail" id="why-invest-detail1">
+                    <h6>Financial Literacy</h6>
+                    <p class="animationS">
+                        Gaining investment knowledge enhances your financial literacy and understanding of market
+                        dynamics.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why-invest" id="why-invest2" onclick="whyInvestC(2)" onmouseover="whyInvest(2)"
+                onmouseout="closeWhyInvest()" title="1">
+                <h2>02</h2>
+                <h6 id="outside-heading2">Wealth Building</h6>
+                <div class="why-invest-detail" id="why-invest-detail2">
+                    <h6>Wealth Building</h6>
+                    <p class="animationS">
+                        Investing in real estate and stocks can be a powerful tool for building long-term wealth and
+                        financial stability.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why-invest" id="why-invest3" onclick="whyInvestC(3)" onmouseover="whyInvest(3)"
+                onmouseout="closeWhyInvest()" title="1">
+                <h2>03</h2>
+                <h6 id="outside-heading3">Risk Management</h6>
+                <div class="why-invest-detail" id="why-invest-detail3">
+                    <h6>Risk Management</h6>
+                    <p class="animationS">
+                        Learning investment strategies helps you manage risks effectively, minimizing potential
+                        financial losses.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why-invest" id="why-invest4" onclick="whyInvestC(4)" onmouseover="whyInvest(4)"
+                onmouseout="closeWhyInvest()" title="1">
+                <h2>04</h2>
+                <h6 id="outside-heading4">Future Planning</h6>
+                <div class="why-invest-detail" id="why-invest-detail4">
+                    <h6>Future Planning</h6>
+                    <p class="animationS">
+                        Acquiring investment knowledge aids in effective long-term financial planning and goal setting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Browse hub -->
+    <div class="container-fluid browse-hub-div div-padding bottom-margin home-nav-bg-white">
+        <h2 class="heading">Browse hub</h2>
+        <div class="grid-container-browse-hub-div">
+
+            {% for course in course %}
+            <div class="course-div a">
+                {% if course.image %}
+                <div class="container-fluid course-img-holder p-0 m-0">
+                    <img src="{{ course.image.url }}" class="img-fluid course-img">
+                </div>
+                {% endif %}
+                <div class="container-fluid course-details c"><br />
+                    <h5>{{ course.title }}</h5>
+                    <p class="course-description">
+                        {{ course.description|truncatechars:145 }}
+                    </p>
+
+                    <h6 class="alignleft">
+                        <img src="{% static 'icons/modules.svg' %}" class="img-fluid">
+                        {{ course.get_module_count_for_course }} Modules
+                    </h6>
+
+                    {% if course.title in course_durations %}
+
+                    <h6 class="alignright">
+                        <img src="{% static 'icons/clock.svg' %}" class="img-fluid">
+
+                        {{ course_durations }} 8hrs 40mins
+
+                    </h6>
+                    {% endif %}
+
+
+                    <div class="clr"></div>
+                    <p class="text-end">
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'course:course_detail' slug=course.slug pk=course.pk %}">
+                            <button class="out-fill-btn">
+                                Learn Here
+                                <img src="{% static 'icons/arrow_right.svg' %}">
+                            </button>
+                        </a>
+                        {% else %}
+                        <a href="{% url 'accounts:login' %}">
+                            <button class="out-fill-btn">
+                                Learn Here
+                                <img src="{% static 'icons/arrow_right.svg' %}">
+                            </button>
+                        </a>
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <!-- Get unlimited access to all courses  -->
+    <div class="container-fluid subscription-div div-padding bottom-margin home-nav-bg-white">
+        <div class="grid-container-subscription-div">
+            <div class="grid-subscription-div subscription-holder a">
+                <h2>Get unlimited access to all courses</h2>
+                <p>
+                    Subscribe to our annual membership now and gain <br class="desktop">unlimited access to our
+                    comprehensive range of <br class="desktop">courses in real estate and stock investments. Let's
+                    <br class="desktop">embark on this journey to financial success together!
+                </p>
+
+                <a href="">
+                    <button class="filled-btn-lg">
+                        Purchase Subscription
+                    </button>
+                </a>
+            </div>
+
+            <div class="grid-subscription-div subscription-pix a">
+                <img src="{% static 'images/ladywithlaptop.png' %}" class="img-fluid desktop">
+                <img src="{% static 'images/ladywithlaptop.png' %}" class="img-fluid phone">
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer Personal Finance -->
+    <div class="container-fluid personal-finance-div div-padding">
+        <div class="container-fluid personal-finance-info c p-0 m-0">
+            <h2 class="animationL">
+                We offer personal financial <br class="desktop">coaching to individuals and <br
+                    class="desktop">corporate teams.
+            </h2>
+
+            <p class="animationS">
+                Get tailored guidance and personalized strategies <br class="desktop">for your financial success.
+            </p>
+
+            <a href="{% url 'consult:book_appointment' %}">
+                <button class="filled-btn-lg">
+                    Book Consultation
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Investments -->
+    <div class="container-fluid investment-div-holder home-invest div-padding bottom-margin c">
+        <h2 class="home-h2">Latest posts</h2>
+        <div class="grid-container-investment-div">
+
+            {% for post in posts %}
+            <div class="container-fluid investment-div p-0 a">
+                {% if post.image %}
+                <div class="property-img p-0">
+                    <img src="{{ post.image.url }}" class="img-fluid">
+                </div>
+                {% endif %}
+                <div class="investment-details c">
+                    <h5>{{ post.title }}</h5>
+                    <p>{{ post.description|truncatechars:120 }}</p>
+
+                    <a href="#">
+                        <button class="out-fill-btn">
+                            View Details
+                            <img src="{% static 'icons/arrow_right.svg' %}">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <center>
+            <a href="#">
+                <button class="filled-btn-lg see-investments">
+                    See all posts
+                </button>
+            </a>
+        </center>
+    </div>
+
+    <!-- Special tools -->
+    <div class="container-fluid special-tools-div c">
+        <h2>Special tools</h2>
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 1 p-0 a">
+                    <div class="container-fluid tools-img p-0 m-0">
+                        <img src="{% static 'images/man-chart.jpg' %}" class="img-fluid animation mb-0">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 p-0 a">
+                    <div class="container-fluid special-tools-info b">
+                        <h5 class="animation">Welcome to smart investing</h5>
+                        <p class="animation">
+                            We create tailored investment portfolios to help you achieve your financial goals. Whether
+                            you're a seasoned investor or just starting out, our recommendations can help you get a
+                            great start.
+                        </p>
+
+                        <a href="{% url 'asset:portfolio_optimizer' %}">
+                            <button class="filled-btn-lg animation">
+                                Create Portfolio
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Calculate your potential ROI -->
+    <div class="container-fluid roi-div c">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 p-0 a">
+                    <div class="container-fluid roi-info b">
+                        <h5 class="animation">Calculate your potential ROI</h5>
+                        <p class="animation">
+                            Curious about how much money you could earn from your next investment on stock, ETF's or
+                            Bonds? Use our expected return calculator to estimate your potential return (ROI) on your
+                            investment based on expert analysis of historical data.
+                        </p>
+
+                        <a href="{% url 'analyser:stock_return' %}">
+                            <button class="filled-btn-lg animation">
+                                Calculate ROI
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 p-0 a">
+                    <div class="container-fluid tools-img roi-img m-0">
+                        <img src="{% static 'images/man-cal.jpg' %}" class="img-fluid animation mb-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock %}
+
+{% block modal %}
+{% include 'base/modal.html' %}
+{% endblock %}

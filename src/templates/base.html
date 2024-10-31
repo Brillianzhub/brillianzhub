@@ -1,0 +1,123 @@
+{% load static %}
+
+{% block extrahead %}
+<script>window.CKEDITOR_BASEPATH = '/static_cdn/ckeditor/ckeditor/';</script>
+{{ block.super }}
+{% endblock %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="" />
+
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}" />
+
+    <!-- facebook opengraph tags -->
+    <!-- <meta property="fb:app_idd" content="1787013931738693" /> -->
+    <meta property="og:title" content="{{ og_title }}" />
+    <meta property="og:type" content="{{ og_type }}" />
+    <meta property="og:url" content="{{ og_url }}" />
+    <meta property="og:image" content="{{ og_image }}" />
+    <meta property="og:site_name" content="{{ og_site }}" />
+    <meta property="og:description" content="{{ og_description }}" />
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Include Bootstrap Datepicker CSS and JS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Include Bootstrap Timepicker CSS and JS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+    <!-- Include Bootstrap Datetimepicker CSS and JS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/logo/favicon.png' %}">
+    <!--Font awsome-->
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+
+    <!--Proxima Nova now Font-->
+    <link rel="stylesheet" href="{% static 'font/stylesheet.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'bootstrap-5.3.2/dist/css/bootstrap.min.css' %}" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    {% include 'base/css.html' %}
+    <!-- <link rel="stylesheet" href="{% static 'stylesheet/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'stylesheet/media.css' %}" type="text/css"> -->
+    <!-- Ckeditor 5 Stylesheet  -->
+    <!-- <link rel="stylesheet" href="{% static 'stylesheet/content-styles.css' %}" type="text/css"> -->
+
+
+
+    <!-- Custom CSS -->
+
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
+
+</head>
+
+<body onload="howItWorks()">
+    <!-- Navigation bar -->
+    {% block navbar %}
+
+    {% endblock %}
+
+
+    {% block header %}
+
+    {% endblock %}
+
+
+    <!-- Main section -->
+    {% block content %}
+
+
+
+    {% endblock %}
+
+
+    <!-- Footer section -->
+    {% include 'base/footer.html' %}
+
+
+    <!-- Menu Modal -->
+    {% include 'base/modal.html' %}
+
+
+
+    <script type="text/javascript" src="{% static 'js/index_js.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/ha.js' %}"></script>
+
+    <script src="{% static 'bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js' %}"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    {% include 'base/cookie.html' %}
+
+</body>
+
+</html>

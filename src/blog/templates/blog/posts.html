@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+
+<main class="main no-main">
+    <div class="container-fluid blog-hero-img blog-img div-padding c">
+        <h2>Blog</h2>
+    </div>
+
+    <div class="grid-container-browse-post-div c">
+        <p>Hello Blog</p>
+    </div>
+
+    <!-- Latest Posts -->
+    <div class="container-fluid blog-holder c">
+        <div class="grid-container-browse-post-div c">
+
+            {% for post in post %}
+            <div class="blog-post b">
+                {% if post.image %}
+                <div class="post-img">
+                    <img src="{{ post.image.url }}" class="img-fluid">
+                </div>
+                {%endif %}
+                <div class="post-details">
+                    <h6>{{ post.created|date:"F j, Y" }}</h6>
+                    <div class="post-title-div p-0">
+                        <h5>{{ post.title }}</h5>
+                    </div>
+
+                    <p>
+                        {{ post.description|truncatechars:100 }}
+                    </p>
+
+                    <a href="{% url 'blog:post_detail' slug=post.slug %}">
+                        <button class="out-fill-btn">
+                            Read More
+                            <img src="{% static 'icons/arrow_right.svg' %}">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</main>
+
+
+
+{% endblock %}

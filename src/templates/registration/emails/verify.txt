@@ -1,0 +1,17 @@
+Hello,
+
+
+Please activate your account for {{ email }} by clicking the below:
+
+
+{{ path }}
+
+
+Once you activate, you can login!
+
+
+Thank you,
+
+
+Team Brillianz Hub
+

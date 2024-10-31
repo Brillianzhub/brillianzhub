@@ -1,0 +1,133 @@
+{% load static %}
+
+<footer class="container-fluid footer-div mb-0 bg-sec">
+    <div class="container-fluid first-div c">
+        <div class="row div-padding">
+            <div class="col-lg-5 col-md-4 col-sm-12 p-0 mb-4 a">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="{% static 'images/logo/y.png' %}" class="img-fluid logo-footer"
+                            alt="Brillianzhub logo">
+                    </a>
+
+                    <p>
+                        Brillianzhub is a leading financial services <br class="desktop">firm specializing in real
+                        estate, stocks, and <br class="desktop">personalized financial coaching.
+                    </p>
+
+                    <div class="socials-media desktop">
+                        <a href="https://www.facebook.com/profile.php?id=100093651557630">
+                            <img src="{% static 'icons/facebook.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on facebook">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/instagram.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on instagram">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/x.svg' %}" class="img-fluid" alt="Brillianzhub on x">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/linkedin.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on linkedin">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12 mb-4 p-0 b">
+                <div class="footer-links fg">
+                    <h6>Company</h6>
+                    <ul>
+                        <li>
+                            <a href="{% url 'about' %}">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Courses</a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'package:packages' %}">Investment Packages</a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'analyser:savings_calculator' %}">Financial Calculators</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'policies:privacy_policy' %}">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-4 p-0 c">
+                <div class="footer-links">
+                    <h6>Contact</h6>
+                    <p>
+                        <img src="{% static 'icons/venue.svg' %}" class="img-fluid">&nbsp;
+                        Borsigstr. 5, Feuerbach, Stuttgart, Germany.
+                    </p>
+
+                    <p class="p-0">
+                        <a href="mailto:brillianzhub@gmail.com">
+                            <img src="{% static 'icons/at.svg' %}" class="img-fluid">&nbsp;
+                            brillianzhub@gmail.com
+                        </a>
+
+                    </p>
+
+                    <p class="p-0 phone-number-link">
+                        <a href="tel:+49 1590 4976605">
+                            <img src="{% static 'icons/phone.svg' %}" class="img-fluid">&nbsp;
+                            +49 1590 4976605
+                        </a>
+                    </p>
+
+
+                    <div class="socials-media phone">
+                        <a href="https://www.facebook.com/profile.php?id=100093651557630">
+                            <img src="{% static 'iconds/facebook.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on facebook">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/instagram.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on instagram">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/x.svg' %}" class="img-fluid" alt="Brillianzhub on x">
+                        </a>
+
+                        <a href="">
+                            <img src="{% static 'icons/linkedin.svg' %}" class="img-fluid"
+                                alt="Brillianzhub on linkedin">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Copywrite Div -->
+    <div class="container-fluid copywrite-div p-0 b">
+        <div class="container-fluid">
+            <div class="row div-padding ">
+                <div class="col-lg-5 col-md-5 col-sm-12 p-0 copy-div c">
+                    <p>Copyright &copy Brillianzhub 2023.&nbsp; All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

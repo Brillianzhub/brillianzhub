@@ -1,0 +1,452 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<main class="main no-main">
+    <div class="container-fluid courses2-div-house home-nav-bg-green p-0 c">
+        <div class="grid-container-courses2-div">
+            <div class="partition courses-list-div-holder course-top-padding home-nav-bg-white desktop b">
+                <div class="container-fluid courses-list-div p-0 a">
+                    <h2>Investments</h2>
+                    <div class="accordion accordion-flushe" id="accordionFlushExample">
+                        <!-- Repeat this accordion-item div if you have other category that have other courses in it, else use the list -->
+
+
+                        <ul class="accordion-ul">
+                            <li>
+                                <a href="#">Real Estate Investments</a>
+                            </li>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        My Portfolio
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse mb-0 collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a class="dropdown-item" href="#">
+                                            Create Portfolio
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            View Portfolio
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li>
+                                <a href="#">Referrals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <br />
+                <div class="container-fluid courses-list-div p-0 a">
+                    <h2>My Courses</h2>
+                    <div class="accordion accordion-flushe" id="accordionFlushExample">
+                        <!-- Repeat this accordion-item div if you have other category that have other courses in it, else use the list -->
+                        <ul class="accordion-ul">
+                            {% for user, course_data in result.items %}
+                            {% for course_title, data in course_data.items %}
+                            <li>
+                                <a href="#">{{ course_title }}</a>
+                            </li>
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partition courses-container-div course-top-padding b">
+                <div class="container-fluid courses-overview-div alt-div a">
+                    <!-- Investment List -->
+                    <div class="container-fluid investment-category p-0 b">
+                        <div class="grid-container-investment-category a">
+                            <div class="investment-category">
+                                <div class="container-fluid property-img-holder p-0">
+                                    <img src="{% static 'images/properties/co-own.jpg' %}" class="img-fluid">
+                                </div>
+                                <div class="container-fluid c-property-details cp-details c">
+                                    <h5>Co-owned Property Investments</h5>
+                                    <p>
+                                        Join fellow investors in co-owning properties and enjoy the benefits of shared
+                                        landlordship. Purchase property shares units and gain from rental returns.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="investment-category">
+                                <div class="container-fluid property-img-holder p-0">
+                                    <img src="{% static 'images/properties/personal-property.jpg' %}" class="img-fluid">
+                                </div>
+                                <div class="container-fluid c-property-details cp-details c">
+                                    <h5>Personal Property Investments</h5>
+                                    <p>
+                                        Whether you're looking for a primary residence or a rental property, private
+                                        property investments can be a great way to build a secure financial future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Properties list -->
+                        <div class="investment-property-list a">
+                            <div class="property-list-div">
+                                <h3 class="alignleft">
+                                    Brillianzhub Properties
+                                </h3>
+                                <h3 class="alignright desktop">
+                                    <a href="brillianzhub-properties.html">
+                                        See All
+                                        <img src="{% static 'icons/arrow_right.svg' %}">
+                                    </a>
+                                </h3>
+                                <div class="clr"></div>
+                            </div>
+
+                            <!-- Properties -->
+                            <div class="grid-container-property-list a">
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/1.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="last-h6">Starting price &#8358;12 million</h6>
+
+                                        <a href="brillianzhub-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/2.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="last-h6">Starting price &#8358;12 million</h6>
+
+                                        <a href="brillianzhub-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/3.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="last-h6">Starting price &#8358;12 million</h6>
+
+                                        <a href="brillianzhub-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="see-all phone text-end">
+                                <a href="brillianzhub-properties.html">
+                                    See All
+                                    <img src="{% static 'icons/arrow_right.svg' %}">
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Properties list -->
+                        <div class="investment-property-list a">
+                            <div class="property-list-div">
+                                <h3 class="alignleft">
+                                    Co-owned Properties
+                                </h3>
+                                <h3 class="alignright desktop">
+                                    <a href="co-owned-properties.html">
+                                        See All
+                                        <img src="{% static 'icons/arrow_right.svg' %}">
+                                    </a>
+                                </h3>
+                                <div class="clr"></div>
+                            </div>
+
+                            <!-- Properties -->
+                            <div class="grid-container-property-list a">
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder3 p-0"
+                                        style="background-image: url('{% static 'images/properties/4.jpg' %}');">
+                                        <div class="units-price-div">
+                                            <span>₦12,000 per unit</span>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="est-p">
+                                            Estimated yield: Up to <span>30%</span> annually
+                                        </h6>
+
+                                        <a href="co-owned-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+
+                                        <div class="units-progress-div">
+                                            <div class="progress" role="progressbar" aria-label="Success example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-dark-blue" style="width: 25%"></div>
+                                            </div>
+
+                                            <h6 class="alignleft">
+                                                1560 units sold
+                                            </h6>
+                                            <h6 class="alignright">
+                                                3000 total units
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder3 p-0"
+                                        style="background-image: url('images/properties/5.jpg');">
+                                        <div class="units-price-div">
+                                            <span>₦12,000 per unit</span>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="est-p">
+                                            Estimated yield: Up to <span>30%</span> annually
+                                        </h6>
+
+                                        <a href="co-owned-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+
+                                        <div class="units-progress-div">
+                                            <div class="progress" role="progressbar" aria-label="Success example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-dark-blue" style="width: 25%"></div>
+                                            </div>
+
+                                            <h6 class="alignleft">
+                                                1560 units sold
+                                            </h6>
+                                            <h6 class="alignright">
+                                                3000 total units
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder3 p-0"
+                                        style="background-image: url('images/properties/6.jpg');">
+                                        <div class="units-price-div">
+                                            <span>₦12,000 per unit</span>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6 class="est-p">
+                                            Estimated yield: Up to <span>30%</span> annually
+                                        </h6>
+
+                                        <a href="co-owned-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+
+                                        <div class="units-progress-div">
+                                            <div class="progress" role="progressbar" aria-label="Success example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-dark-blue" style="width: 25%"></div>
+                                            </div>
+
+                                            <h6 class="alignleft">
+                                                1560 units sold
+                                            </h6>
+                                            <h6 class="alignright">
+                                                3000 total units
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="see-all phone text-end">
+                                <a href="co-owned-properties.html">
+                                    See All
+                                    <img src="{% static 'icons/arrow_right.svg' %}">
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Properties list -->
+                        <div class="investment-property-list a">
+                            <div class="property-list-div">
+                                <h3 class="alignleft">
+                                    Verified Vendor Properties
+                                </h3>
+                                <h3 class="alignright desktop">
+                                    <a href="vendor-properties.html">
+                                        See All
+                                        <img src="{% static 'icons/arrow_right.svg' %}">
+                                    </a>
+                                </h3>
+                                <div class="clr"></div>
+                            </div>
+
+                            <!-- Properties -->
+                            <div class="grid-container-property-list a">
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/7.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6>Starting price &#8358;12 million</h6>
+                                        <h6 class="last-h6">
+                                            Vendor: <span>Sallysafe real estate</span>
+                                        </h6>
+
+                                        <a href="vendor-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/5.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6>Starting price &#8358;12 million</h6>
+                                        <h6 class="last-h6">
+                                            Vendor: <span>Sallysafe real estate</span>
+                                        </h6>
+
+                                        <a href="vendor-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="property-div">
+                                    <div class="container-fluid property-img-holder2 p-0">
+                                        <img src="{% static 'images/properties/3.jpg' %}" class="img-fluid">
+                                    </div>
+                                    <div class="container-fluid property-details c">
+                                        <h5>Student Hostel Accommodation</h5>
+                                        <h6>Location: Ihiagwa, Owerri</h6>
+                                        <h6>Starting price &#8358;12 million</h6>
+                                        <h6 class="last-h6">
+                                            Vendor: <span>Sallysafe real estate</span>
+                                        </h6>
+
+                                        <a href="vendor-property-detail.html" class="property-btn">
+                                            View Details
+                                            <img src="{% static 'icons/arrow_right.svg' %}">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="see-all l-see-all phone text-end">
+                                <a href="vendor-properties.html">
+                                    See All
+                                    <img src="{% static 'icons/arrow_right.svg' %}">
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+{% endblock %}
+
+
+<!-- ================ contact section start ================= -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">{{ user.profile.firstname }}, {{ user.profile.lastname }}</h2>
+            </div>
+            <div class="col-lg-8">
+
+                <div class="row" style="padding-top:20px;">
+
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card">
+                            <h4 class="card-title">Account Detalis</h4>
+                            <div class="list-group">
+                                <a class="list-group-item" href="{% url 'password_change' %}">Change Password</a>
+                                <a class="list-group-item" href="{% url 'account:edit_profile' %}">Edit Profile</a>
+                                <a class="list-group-item" href="{% url 'referral:referral_view' %}">My Reffarals</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card">
+                            <h4 class="card-title">Transactions</h4>
+                            <div class="list-group">
+                                <a class="list-group-item" href="{% url 'portfolio:land_property' %}">Investment
+                                    Portfolio</a>
+                                <a class="list-group-item" href="#">Investment Earning and Payment</a>
+                                <a class="list-group-item" href="{% url 'referral:my_referrals' %}">Referral
+                                    Earnings</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-4">
+                        <div class="card">
+                            <h4 class="card-title">Courses</h4>
+                            <div class="list-group">
+                                <a class="list-group-item" href="{% url 'students:enrolled_courses' %}">Courses
+                                    Enrolled</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================ contact section end ================= -->

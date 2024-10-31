@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+{% block content %}
+<main class="main no-main">
+    <div class="container-fluid div-holder home-nav-bg-green contact-div nav-clearance c">
+        <div class="grid-container-contact-div div-padding">
+            <div class="grid-item-contact-div signup-bg first-div-deatils img-holder b">
+                <div class="container-fluid signup-holder">
+                    <h2>Sign In</h2>
+                </div>
+            </div>
+
+            <div class="grid-item-contact-div form-holder-div home-nav-bg-green p-0 b">
+                <div class="container-fluid form-details c">
+
+                    <form action="{% url 'accounts:login' %}" method="post">
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+
+                        <div class="style-form form-mb">
+                            <label for="id_email" class="form-label">Email address<sup>*</sup></label>
+                            <input type="email" class="form-control" name="email"
+                                placeholder="Enter a valid email address" required id="id_email"
+                                style="border: 1px solid #050505;">
+                        </div>
+
+                        <div class="style-form password-holder form-mb">
+                            <label for="id_password" class="form-label">Password<sup>*</sup></label>
+                            <input type="password" name="password" autocomplete="current-password"
+                                class="password-input" id="id_password" style="border: 1px solid #050505;">
+                            <i class="fa fa-eye" id="togglePassword"></i>
+                        </div>
+
+                        <p class="text-end mb-0">
+                            <button type="submit" class="filled-btn-lg ">
+                                Sign In
+                            </button>
+                        </p>
+                        <p class="text-end mb-0">
+                            <a href="{% url 'password_reset' %}" class="forgot-password">Forgot password?</a>
+                        </p>
+                    </form>
+
+                </div>
+
+                <div class="container-fluid extra-signup-detail p-0">
+                    <h5>
+                        Don’t have an account?
+                        <a href="{% url 'accounts:register' %}">
+                            Create account here
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

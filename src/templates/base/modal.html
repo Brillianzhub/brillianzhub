@@ -1,0 +1,101 @@
+{% load static %}
+
+
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen menuModal">
+        <div class="modal-content home-nav-bg-white">
+            <div class="modal-header vnav">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo/logoMenu.png' %}"
+                            alt="Brillianzhub logo" class="phone-header-logo"></a>
+                </h5>
+
+                <img src="{% static 'icons/menu_cancel.svg' %}" class="img-fluid nav__icon" data-bs-dismiss="modal"
+                    aria-label="Close">
+            </div>
+            <div class="modal-body p-0">
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Courses
+                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'asset:portfolio_optimizer' %}">
+                            Investing
+                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="showCourses()">
+                            Calculators
+                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright" id="dropdown-arrow"
+                                name="1">
+                        </a>
+                        <div id="course-link-div">
+                            <a href="{% url 'analyser:savings_calculator' %}">
+                                Compound Savings Calculator
+                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                            </a>
+
+                            <a href="{% url 'analyser:stock_return' %}">
+                                Stock Investment Calculator
+                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                            </a>
+
+                            <a href="{% url 'analyser:real_estate_roi' %}">
+                                Real Estate Calculator
+                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                            </a>
+
+                            <a href="{% url 'analyser:savings_target_calculator' %}">
+                                Savings Target Calculator
+                                <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                            </a>
+
+                        </div>
+                    </li>
+                    <li class="active-link">
+                        <a href="#" class="active-page">
+                            Blog
+                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">
+                            Contact
+                            <img src="{% static 'icons/arrow_right.svg' %}" class="alignright">
+                        </a>
+                    </li>
+                </ul>
+
+                {% if request.user.is_authenticated %}
+                <center>
+                    <!-- Use the session state to display any of the buttons -->
+                    <!-- <a href="signin.html">
+                        <button class="filled-btn-lg phone-nav-btn mb-1">My Account</button>
+                    </a> -->
+
+                    <a href="{% url 'accounts:logout' %}">
+                        <button class="filled-btn-lg phone-nav-btn mb-1">Logout</button>
+                    </a>
+                </center>
+                {% else %}
+                <center>
+                    <!-- Use the session state to display any of the buttons -->
+                    <a href="{% url 'accounts:login' %}">
+                        <button class="filled-btn-lg phone-nav-btn mb-1">My Account</button>
+                    </a>
+
+                    <a href="{% url 'accounts:logout' %}">
+                        <button class="filled-btn-lg phone-nav-btn mb-1">Logout</button>
+                    </a>
+                </center>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>

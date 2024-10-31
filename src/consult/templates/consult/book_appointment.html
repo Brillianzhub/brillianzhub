@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+
+{% block content %}
+
+<main class="main no-main">
+    <div class="container-fluid div-holder home-nav-bg-green contact-div nav-clearance c c">
+        <div class="grid-container-contact-div div-padding">
+            <div class="grid-item-contact-div consultation-bg first-div-deatils img-holder b">
+                <div class="container-fluid contact-details">
+                    <h2>Get in touch with us</h2>
+                    <address>
+                        <img src="{% static 'icons/venue.svg' %}" class="img-fluid">&nbsp;
+                        Borsigstr. 5, Feuerbach, Stuttgart, Germany.
+                    </address>
+
+                    <p class="p-0">
+                        <a href="mailto:brillianzhub@gmail.com">
+                            <img src="{% static 'icons/at.svg' %}" class="img-fluid">&nbsp;
+                            brillianzhub@gmail.com
+                        </a>
+
+                    </p>
+
+                    <p class="p-0 phone-number-link">
+                        <a href="tel:+49 1590 4976605">
+                            <img src="{% static 'icons/phone.svg' %}" class="img-fluid">&nbsp;
+                            +49 1590 4976605
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-item-contact-div form-holder-div home-nav-bg-green p-0 b">
+                <div class="container-fluid form-details c">
+
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        {{ appointment_form.non_field_errors }}
+
+                        <div class="row style-form form-mb">
+                            <div class="col-6">
+                                <label for="id_first_name">First name<sup>*</sup></label>
+
+                                <input type="text" name="first_name" class="form-control" placeholder="Your first name"
+                                    maxlength="20" aria-label="First name" required id="id_first_name"
+                                    style="border: 1px solid #050505;">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="id_last_name">Last name<sup>*</sup></label>
+                                <input type="text" name="last_name" class="form-control" placeholder="Last name"
+                                    maxlength="20" aria-label="Last name" required id="id_last_name"
+                                    style="border: 1px solid #050505;">
+                            </div>
+                        </div>
+
+                        <div class="style-form form-mb">
+                            <label for="id_email" class="form-label">Email address<sup>*</sup></label>
+                            <input type="email" name="email" class="form-control"
+                                placeholder="Enter a valid email address" maxlength="254" required id="id_email"
+                                style="border: 1px solid #050505;">
+                        </div>
+
+                        <div class="style-form form-mb">
+                            <label for="id_appointment_type" class="form-label">Subject</label>
+                            <select class="form-control form-select" id="id_appointment_type" name="appointment_type"
+                                style="border: 1px solid #050505;">
+                                <option value="1">Stock Investment</option><br />
+                                <option value="2">Real Estate</option>
+                                <option value="3">Personal Finance</option>
+                                <option value="more than 3">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="style-form form-mb">
+                            <label for="id_appointment_date_time" class="form-label">Date</label>
+                            <input type="text" name="appointment_date_time" class="form-control datetimepicker" required
+                                id='datetimepicker' style="border: 1px solid #050505;">
+                        </div>
+
+                        <div class="form-floating style-form  form-mb">
+                            <h6>Message</h6>
+
+                            <textarea name="message" cols="40" rows="10" class="form-control" maxlength="100" required
+                                id="id_message" style="border: 1px solid #050505;">
+                        </textarea>
+                        </div>
+
+                        <p class="text-end mb-0">
+                            <button type="submit" class="filled-btn-lg ">
+                                Book Consultation
+                            </button>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script>
+    $(document).ready(function () {
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+        });
+
+        $('.timepicker').timepicker({
+            format: 'hh:ii:ss',
+            autoclose: true,
+            showMeridian: false,
+        });
+
+        $('.datetimepicker').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm:ss',
+            showClear: true
+        });
+    });
+</script>
+
+
+{% endblock %}

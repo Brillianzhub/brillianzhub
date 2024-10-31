@@ -1,0 +1,2876 @@
+@media(max-width: 700px) {
+  :root {
+    --div-padding: 2.4rem;
+    /*2.4rem*/
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .phone {
+    display: block !important;
+  }
+
+  .div-padding {
+    padding-left: var(--div-padding);
+    padding-right: var(--div-padding);
+  }
+
+  .nav-clearance {
+    padding-top: 1.94rem !important;
+  }
+
+  .main {
+    margin-top: 8.84vh !important;
+  }
+
+  /* Navbar */
+  .vnav {
+    height: 4.4357rem !important;
+    padding: 0 !important;
+    padding: 2.94rem var(--div-padding) 1.94rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /*#menuModal{
+  	transition: 1s;
+  }*/
+
+  .phone-header-logo {
+    width: 9.375rem;
+    height: 2.53181rem;
+  }
+
+  .nav__icon {
+    width: 2.625rem;
+    height: 2.625rem;
+  }
+
+  /* Menu modal */
+  .home-nav-bg-white .vnav {
+    border-bottom: none;
+  }
+
+  .home-nav-bg-white .modal-body {
+    padding: 3rem 2.5rem 2.25rem !important;
+  }
+
+  #menuModal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 8rem;
+    /*10rem*/
+  }
+
+  #menuModal li {
+    height: 3.6875rem !important;
+    padding: 0;
+    padding: 0.5rem 0.5rem !important;
+    border-bottom: 1px solid #F2F3F3;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25rem;
+    clear: both;
+  }
+
+  #menuModal li a {
+    display: block;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    color: #0D344E;
+  }
+
+  #menuModal .active-link {
+    background: #F3FDFD;
+    border-radius: 0.5rem;
+  }
+
+  #menuModal li .inner-link {
+    font-size: 1rem;
+    font-family: Proxima Nova;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #051722;
+  }
+
+  #menuModal li:hover {
+    color: var(--secondary-color);
+    border-left: 0.25rem solid #fff;
+    font-size: 1.25rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    background: var(--brand-green);
+  }
+
+  #menuModal li #course-link-div a:hover {
+    color: var(--secondary-color);
+    border-left: 0.25rem solid #fff;
+    font-size: 1.25rem;
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    background: var(--brand-green);
+  }
+
+  .phone-nav-btn {
+    width: 94%;
+    right: 0;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+  }
+
+  .phone-nav-btn:hover {
+    border-radius: 0.625rem 0rem 0.625rem 0.625rem;
+    border: 0.125rem var(--brand-green) solid;
+    background: var(--bg-white);
+    color: var(--secondary-color);
+  }
+
+  /* Courses Dropdown */
+  .courses-li {}
+
+  #course-link-div {
+    display: none;
+    padding-top: 0.62rem !important;
+  }
+
+  #course-link-div a {
+    color: #051722;
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.62rem !important;
+  }
+
+  /* FOOTER */
+  .footer-div::before {
+    background-size: 30%;
+  }
+
+  .footer-logo .logo-footer {
+    width: 11.57153125rem;
+    height: 3.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-logo p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-bottom: 3.75rem;
+  }
+
+  .footer-links h6 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links p,
+  a {
+    margin-bottom: 1rem;
+  }
+
+  .phone-number-link {
+    margin-bottom: 3.75rem !important;
+  }
+
+  .footer-links {
+    padding: 0;
+  }
+
+  .first-div {
+    padding-bottom: 0.875rem;
+  }
+
+  .copywrite-div p {
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+  }
+
+  .socials-media a img {
+    width: 1.875rem;
+    /* 30rem */
+    height: 1.875rem;
+    /* 30rem */
+  }
+
+  /* Home Page */
+  .grid-container-hero-div {
+    display: block;
+  }
+
+  .hero-div {
+    padding-top: 2.5rem;
+    padding-bottom: 0rem;
+  }
+
+  .hero-img2 {
+    width: 100%;
+  }
+
+  .hero-img {
+    padding: 0;
+    padding-top: 1.31rem;
+    display: block !important;
+  }
+
+  .hero-div-info {
+    padding-top: 0;
+  }
+
+  .hero-div-info h2 {
+    font-size: 2rem;
+  }
+
+  .hero-div-info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .hero-div-info button {
+    width: 100%;
+  }
+
+  .hero-div-info .filled-btn-lg {
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-div-info .hero-button-div {
+    margin-bottom: 1.315rem;
+  }
+
+  .hero-div-info .path-img {
+    display: none;
+  }
+
+  .hero-div-info .savings-img {
+    display: none;
+  }
+
+  .hero-img .savings-img {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-bottom: 0.44rem;
+  }
+
+  /* SCROLL ANIMATIONS */
+  .animationY {
+    opacity: 0;
+    transform: translateY(-2px) !important;
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+  }
+
+  .scroll-animationY {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animationL {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+  }
+
+  .scroll-animationL {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+  /*who are we section*/
+  .grid-container-who-are-we {
+    display: block;
+  }
+
+  .who-are-we-pix {
+    margin-bottom: 2.1rem;
+    padding: 0;
+  }
+
+  .who-are-we-info-holder {
+    padding-left: 0 !important;
+  }
+
+  .who-are-we-info {
+    padding-top: 0 !important;
+  }
+
+  .who-are-we-info h2 {
+    font-size: 3rem !important;
+  }
+
+  .who-are-we-info h6 {
+    margin-bottom: 0.6875rem;
+    font-size: 1.5rem;
+  }
+
+  .who-are-we-info p {
+    line-height: 1.5rem;
+  }
+
+  /* Why You Should Invest */
+  .heading {
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .why-invest-div {
+    padding-top: 1.5rem;
+    padding-bottom: 2.1875rem;
+  }
+
+  .grid-container-why-invest {
+    display: block;
+  }
+
+  .why-invest-open {
+    background: var(--brand-green);
+  }
+
+  .why-invest {
+    box-sizing: border-box;
+    width: 100% !important;
+    /* 275rem */
+    height: 18.75rem !important;
+    /* 285rem */
+    margin-bottom: 1.5rem;
+  }
+
+  #why-invest-detail1,
+  #why-invest-detail2,
+  #why-invest-detail3,
+  #why-invest-detail4 {
+    padding-bottom: 1.25rem !important;
+  }
+
+  .why-invest h2 {
+    font-size: 5rem;
+  }
+
+  .why-invest h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #051722;
+  }
+
+  .why-invest-detail p {
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem;
+  }
+
+  /* Browse Hub */
+  .browse-hub-div {
+    padding-top: 3.75rem !important;
+  }
+
+  .grid-container-browse-hub-div {
+    display: block;
+  }
+
+  .course-div-holder {
+    width: 100%;
+    padding-right: 0 !important;
+  }
+
+  .browse-hub-div .course-div {
+    margin-bottom: 1.19rem;
+  }
+
+  .course-img-holder {
+    width: 100% !important;
+    /* 375rem */
+    height: 13.4375rem !important;
+    /* phone 215rem*/
+    /*  273rem*/
+  }
+
+  .course-div .course-details {
+    padding: 1rem;
+    padding-left: 1rem;
+  }
+
+  .course-div h5 {
+    font-size: 1.035rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+  }
+
+  .course-div .course-description {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .course-details h6 {
+    color: #0A293E;
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .course-details button {
+    width: auto;
+    /*  154rem*/
+    height: 2.6875rem !important;
+    /*  43rem*/
+    font-size: 1rem;
+  }
+
+  /* Subscription section */
+  .grid-container-subscription-div {
+    display: block;
+  }
+
+  .subscription-holder {
+    padding: 0 !important;
+  }
+
+  .grid-subscription-div {
+    margin-bottom: 2rem;
+  }
+
+  .subscription-holder h2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .subscription-holder p {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    margin-bottom: 6.5%;
+  }
+
+  .subscription-holder .filled-btn-lg {
+    font-size: 0.875rem;
+    line-height: 1.6875rem;
+  }
+
+  .subscription-pix {
+    width: 100% !important;
+    /*472rem*/
+    max-height: 17.5625rem !important;
+    /* 281rem 4.5625rem*/
+  }
+
+  /*Offer Personal Finance section*/
+  .personal-finance-div {
+    display: block;
+    height: 32.375rem !important;
+    /*  518rem  */
+    padding-top: 3.75rem !important;
+    background-image: url("{% static 'images/peoplechart2.png' %}");
+  }
+
+  .personal-finance-info {
+    width: 100% !important;
+  }
+
+  .personal-finance-info h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .personal-finance-info p {
+    font-size: 1rem !important;
+  }
+
+  .personal-finance-info button {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+    color: #0D344E;
+  }
+
+  /* Investment corner */
+  .home-h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .grid-container-investment-div {
+    display: block;
+  }
+
+  .investment-div {
+    margin-bottom: 1.25rem;
+  }
+
+  .property-img {
+    height: 17.375rem;
+    padding: 0;
+  }
+
+  /* Special tools section */
+  .special-tools-div {
+    padding: 0vw 3.15rem !important;
+  }
+
+  .special-tools-div h2 {
+    font-size: 1.5rem !important;
+    margin-left: -0.625rem;
+    margin-bottom: 1rem;
+  }
+
+  .special-tools-div .col-sm-12 {
+    margin-bottom: 1.125rem;
+  }
+
+  .special-tools-info {
+    padding: 0;
+  }
+
+  .special-tools-info h5 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .special-tools-info button {
+    font-size: 0.875rem;
+  }
+
+  /*Calculate your potential ROI*/
+  .roi-div {
+    padding: 0 3.15rem;
+  }
+
+  .roi-div .col-sm-12 {
+    margin-bottom: 1.125rem;
+  }
+
+  .roi-info {
+    padding: 0;
+  }
+
+  .roi-info h5 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+
+  .roi-info button {
+    font-size: 0.875rem;
+  }
+
+  .roi-img {
+    padding: 0;
+  }
+
+
+  /* INVESTMENT */
+  .investment-div-holder {
+    padding-top: 1.94rem;
+  }
+
+  .investment-div-holder h2 {
+    font-size: 2rem;
+  }
+
+  /* CONTACT US PAGE */
+  .grid-container-contact-div {
+    display: block;
+  }
+
+  .no-main .col-lg-6 {
+    min-height: 0.625rem !important;
+  }
+
+  .img-holder {
+    border-radius: 0;
+    padding: 1.9375rem var(--div-padding) 5.13rem;
+  }
+
+  .form-holder-div {
+    padding: 2.5rem var(--div-padding) 5rem !important;
+    background: #fff !important;
+  }
+
+  .grid-container-contact-div {
+    padding: 0 !important;
+  }
+
+  .contact-div {
+    padding: 0rem !important;
+  }
+
+  .contact-div .first-div-deatils {
+    background-size: 100%;
+  }
+
+  .contact-details {
+    padding: 1.5rem 1rem 0.375rem;
+    padding-bottom: 0rem !important;
+  }
+
+  .contact-details h2 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .contact-details p,
+  address,
+  a {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-details .phone-number-link {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .form-details {
+    padding: 1.5rem 0.75rem 1.5rem;
+    background: #EEF2F3;
+  }
+
+  .form-details .col-6 {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .style-form input[type=text],
+  input[type=email],
+  input[type=date],
+  input[type=password] {
+    background: #F8F8F8;
+    border: 0.0625rem solid #F8F8F8;
+  }
+
+  .style-form select {
+    font-size: 0.65rem;
+    background: #F8F8F8;
+    border: 0.0625rem solid #F8F8F8;
+  }
+
+  .style-form textarea {
+    background: #F8F8F8;
+    border: 0.0625rem solid #F8F8F8;
+  }
+
+  .form-details button {
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+  }
+
+  /*  SIGNUP PAGE*/
+  .signup-holder {
+    padding: 6.25rem 2.75rem 0.625rem 0rem !important;
+    margin-bottom: 0rem !important;
+    min-height: 10.25rem;
+    background: 100%;
+  }
+
+  .signup-holder h2 {
+    font-size: 1.625rem !important;
+  }
+
+  .password-holder .password-input {
+    width: 98.4%;
+    margin-bottom: 2.5rem;
+  }
+
+  .password-holder i {
+    margin-left: -12%;
+    /*5.5%*/
+    cursor: pointer;
+  }
+
+  .forgot-password {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .extra-signup-detail h5 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.875rem;
+  }
+
+  /* COURSES PAGE */
+  .grid-container-courses2-div {
+    display: block;
+  }
+
+  .courses-container-div {
+    padding: 2.3125rem var(--div-padding) !important;
+  }
+
+  .courses2-div-house {
+    background: #F3FDFD;
+  }
+
+  .courses-overview-div {
+    padding: 2.3125rem var(--div-padding) !important;
+  }
+
+  .grid-container-last-lesson {
+    display: block;
+  }
+
+  .last-lesson-div {
+    padding: 0.6875rem 0.6875rem 1rem !important;
+    padding-left: 1rem !important;
+    border-radius: 0.625rem;
+    margin-bottom: 5rem;
+  }
+
+  .last-lesson-div h5 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+  }
+
+  .last-lesson-div h6 {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .last-lesson-div img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .last-lesson-div p {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .grid-container-avail-courses {
+    display: block;
+  }
+
+  .course-div-holder2 {
+    margin-bottom: 1rem !important;
+  }
+
+  .continue-btn-div {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    padding-right: 0rem !important;
+  }
+
+  .continue-btn-div .filled-btn-lg {
+    padding-left: 0.375rem !important;
+    padding-right: 0.1875rem !important;
+    font-size: 0.875rem;
+  }
+
+  .course-details2 {
+    padding: 0rem 1rem 1.1875rem !important;
+    min-height: 18.8125rem;
+  }
+
+  .course-div2 h6 {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #0A293E;
+  }
+
+  .course-details2 button {
+    width: 100%;
+  }
+
+  /* MODULES PAGE */
+  .start {
+    display: none;
+    padding: 1.5625rem 0 1rem 8.78125rem;
+    padding-right: 0rem !important;
+  }
+
+  .module h5 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .module li {
+    height: 2.875rem;
+    padding: 0.6875rem 1rem;
+  }
+
+  .module li a {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .module li a img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /*  LESSON PAGE */
+  .grid-container-lesson-row {
+    display: block !important;
+  }
+
+  .left-img {
+    display: block;
+    height: 100% !important;
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .right-img {
+    display: block;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .l-lesson-div2 {
+    padding: 0 !important;
+    padding: 1.5rem 1rem 1rem !important;
+    border-radius: 1.75rem;
+  }
+
+  .l-lesson-div2 h6 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 1rem;
+  }
+
+  .next-lesson-div {
+    margin-left: 0rem !important;
+  }
+
+  .lesson-img {
+    width: 100% !important;
+    height: 10.75rem !important;
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lesson-details-div {
+    margin-left: 0rem !important;
+    margin-bottom: 3.75rem;
+    padding: 0 !important;
+  }
+
+  .lesson-details-div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .next-prev-div {
+    margin-left: 0rem;
+  }
+
+  .prev-div {
+    max-width: 7.5rem;
+    padding: 0.75rem 0.3rem 0.5rem !important;
+    border-radius: 10rem;
+  }
+
+  .prev-div h5 {
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .prev-div h5 img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* ABOUT PAGE */
+  .about-banner {
+    padding-top: 1.25rem !important;
+  }
+
+  .grid-container-about-banner {
+    display: block;
+  }
+
+  .about-div-info {
+    padding: 0 !important;
+  }
+
+  .about-div-info h2 {
+    font-size: 2rem;
+  }
+
+  .about-div-info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .about-div-info {
+    margin-bottom: 2rem;
+  }
+
+  /* User counter section */
+  .users-counter-holder {
+    background: #0D344E;
+  }
+
+  .users-counter-holder {
+    padding-left: 0rem !important;
+  }
+
+  .grid-users-counter {
+    padding: 1.125rem 9.3vw;
+  }
+
+  .grid-item-users {
+    width: 6.5rem;
+    height: 5.5625rem;
+  }
+
+  .grid-item-users h5 {
+    font-size: 2rem;
+  }
+
+  .grid-item-users p {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  /* Testimonials */
+  .testimonial-holder {
+    min-height: 26.625rem !important;
+    padding: 2.5625rem 0;
+  }
+
+  .grid-container-testimonial {
+    display: block;
+  }
+
+  .testimonial-holder1 {
+    min-height: 39.375rem;
+  }
+
+  .testimonial-holder h5 {
+    font-size: 1.4rem;
+    margin-left: 2.3125rem;
+    margin-bottom: 0 !important;
+  }
+
+  .testimonial-holder-div {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .quote-div {
+    width: 100%;
+    height: 4.375rem;
+    padding: 0 !important;
+    padding-left: 2.1875rem !important;
+    /*    border: 2rem solid yellow;*/
+  }
+
+  .quote-div img {
+    width: 25%;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .testimony {
+    float: left !important;
+    width: 100%;
+    min-height: 26.625rem;
+    padding: 1.5rem 1rem 1.3125rem !important;
+    border-radius: 1.25rem 0 1.25rem 0;
+    margin-top: 0;
+    background-image: none;
+    /*    border: 2rem solid purple;*/
+  }
+
+  .quote-div h1 {
+    font-size: 9.4375rem;
+    line-height: 8.75rem;
+  }
+
+  .myTestimony {
+    min-height: 26.625rem;
+    margin-bottom: 0 !important;
+    /*    border: 2rem solid red;*/
+  }
+
+  .myTestimony p {
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .myTestimony h6 {
+    margin-bottom: 0 !important;
+  }
+
+  /* Our Partners */
+  .partners-div-holder h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6875rem;
+  }
+
+  /* Meet the Team */
+  #team-members {
+    display: none;
+  }
+
+  .team-div-holder h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6875rem;
+  }
+
+  .grid-container-team {
+    display: block;
+  }
+
+  .team-member {
+    width: 100%;
+    height: 21.6875rem;
+    margin-bottom: 1.5rem;
+    padding: 15.5625rem 1.3125rem 1.3125rem !important;
+    background-image: url("{% static 'images/boy.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 1.25rem 0 1.25rem 1.25rem;
+  }
+
+  #about_btn {
+    display: block;
+  }
+
+  .about-btn {
+    background: transparent;
+    border: none !important;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    word-wrap: break-word;
+    color: #0D344E;
+  }
+
+  /* How our consultation works section */
+  .consultation-div-holder h2 {
+    font-size: 1.5rem;
+  }
+
+  .consultation-div-holder p {
+    font-size: 0.9375rem;
+    margin-bottom: 1.6875rem;
+  }
+
+  .grid-container-consultation {
+    display: block;
+  }
+
+  .consultation-div {
+    margin-bottom: 2.5rem;
+  }
+
+  .instruction-div {
+    width: 100%;
+    height: 10.6875rem;
+    padding: 1rem;
+    border: 0.0625rem solid rgba(73.24, 85.32, 93.50, 0.08);
+    margin-bottom: 1rem;
+  }
+
+  .consultation-div-holder button {
+    font-size: 1rem;
+    width: 100% !important;
+    margin-bottom: 1.9375rem;
+  }
+
+  /* COMPOUND CALCULATOR */
+  .results-div {
+    padding-bottom: 0 !important;
+  }
+
+  .signup-holder2 {
+    padding: 6.25rem 2.75rem 0.625rem 0rem !important;
+    margin-bottom: 0rem !important;
+    min-height: 10.25rem;
+    background: 100%;
+  }
+
+  .signup-holder2 h2 {
+    font-size: 1.625rem !important;
+  }
+
+  .form-holder-div2 {
+    padding: 2.5rem var(--div-padding) !important;
+  }
+
+  .cal-div-holder .form-details {
+    padding: 1.5rem 0.75rem 0rem;
+    background: #EEF2F3;
+  }
+
+  .grid-container-result-div {
+    display: block;
+  }
+
+  .grid-item-result-div1 {
+    width: 100%;
+    padding-left: var(--div-padding);
+    padding-right: 0;
+  }
+
+  .grid-item-result-div2 {
+    width: 100%;
+    padding-left: var(--div-padding);
+    padding-right: var(--div-padding);
+  }
+
+  .disclaimer-holder {
+    padding: 2.5rem 1.4rem 1rem 0 !important;
+  }
+
+  .grid-container-result-div .disclaimer-div a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-container-result-div .disclaimer-div button {
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .grid-container-result-div .disclaimer-div h5 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .disclaimer-div1 {
+    padding: 0;
+  }
+
+  .disclaimer-div1 h5 {
+    font-size: 1.5rem;
+  }
+
+  .learn-video-holder {
+    padding: 2.5rem 0rem 1.5rem !important;
+  }
+
+  .learn-video-holder h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .learn-video-holder iframe {
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .learn-video-holder button {
+    width: 100%;
+    margin-bottom: 5.12rem;
+  }
+
+  /* BLOG PAGE */
+  .blog-hero-img {
+    padding: 6.25rem var(--div-padding) 0.625rem !important;
+    margin-bottom: 0rem !important;
+    height: 18.65rem;
+    background-size: 100%;
+  }
+
+  .blog-hero-img h2 {
+    font-size: 1.625rem !important;
+  }
+
+  .blog-holder {
+    padding: 2.5rem var(--div-padding) 4.37rem;
+  }
+
+  .grid-container-browse-post-div {
+    display: block;
+  }
+
+  /* Blog Post Page */
+  .blog-post-holder h6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-post-details {
+    padding: 0 !important;
+  }
+
+  .blog-post-details h6 {
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-post-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-post-details img {
+    width: auto;
+    height: auto;
+  }
+
+  /* pre code {
+    background: unset;
+    padding: 0;
+    border-radius: 0;
+    overflow-wrap: normal;
+
+    overflow-x: scroll;
+  } */
+
+  /* USER DASHBOARD */
+  .grid-container-courses3-div {
+    display: block;
+  }
+
+  .grid-container-progress {
+    grid-template-columns: 53.5% 44%;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Quiz */
+  .grid-container-progress2 {
+    display: grid;
+    gap: 0.62rem;
+    grid-template-columns: 62% 38%;
+  }
+
+  .grid-container-progress2 span {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .quiz-div h4 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .quiz-div .quiz-radio {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .quiz-div .form-check {
+    margin-bottom: 1.25rem !important;
+  }
+
+  .quiz-div button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* 150% */
+  }
+
+  /* Quiz response */
+  .quiz-response-div h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .quiz-response-div p {
+    font-size: 1rem;
+  }
+
+  .quiz-response-div p span {
+    line-height: 1.5rem;
+  }
+
+  .quiz-response-div button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* Try Again page */
+  .try-again-div {
+    margin-top: 6.75rem;
+    margin-bottom: 9.88rem;
+  }
+
+  .try-again-div h2 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .try-again-div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .try-again-div button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .try-again-div .btnS {
+    margin-right: 1rem;
+  }
+
+  .try-again-div .filled-btn {
+    padding: 0.5rem 3rem;
+  }
+
+
+  /* Quiz Completed */
+  .quiz-completed-div {
+    margin-bottom: 8.16rem;
+  }
+
+  .quiz-completed-div h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .quiz-completed-div h2 {
+    font-size: 2rem;
+  }
+
+
+  .quiz-completed-div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+
+  .quiz-completed-div button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+
+  .course-top-padding {
+    padding: 4rem 0 0 !important;
+  }
+
+
+  /* PROPERTY INVESTMENTS */
+  .alt-div {
+    padding-left: var(--div-padding) !important;
+    padding-right: var(--div-padding) !important;
+  }
+
+  .grid-container-investment-category {
+    display: block;
+  }
+
+  .investment-category {
+    margin-bottom: 1.5rem;
+  }
+
+  .property-img-holder {
+    height: 11.1875rem;
+  }
+
+  .details {
+    background: var(--bg-green);
+  }
+
+  .c-property-details h5 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .c-property-details p {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .investment-property-list {
+    margin-bottom: 3.75rem;
+  }
+
+  .investment-property-list h3 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .see-all a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .grid-container-property-list {
+    display: block;
+  }
+
+  .property-div {
+    margin-bottom: 1.5rem;
+  }
+
+  .property-img-holder2 {
+    height: 13.5rem;
+  }
+
+  .property-details {
+    background: #fff;
+    padding: 1rem 0.1rem 2.06rem 0.5rem !important;
+    border-radius: 0rem 0 0.625rem 0.625rem;
+  }
+
+  /* Co-owned Properties */
+  .property-img-holder3 {
+    height: 13.5rem;
+    padding-top: 10.69rem !important;
+  }
+
+  .units-progress-div {
+    margin: 2.5rem 0 2.81rem;
+    padding: 0 2.94rem 0 0 !important;
+  }
+
+  .l-see-all {
+    padding-bottom: 3.5rem !important;
+  }
+
+  /* Property Details */
+  .first-h3 {
+    margin-top: 0rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .propery-img-slider {
+    height: 11.5rem;
+    padding: 4.88rem 0rem 4.37rem;
+    border-radius: 0.625rem 0rem 0.625rem 0.625rem;
+    background-size: cover;
+  }
+
+  .property-detail2 h6 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .property-desc,
+  .property-desclaimer {
+    width: 100%;
+  }
+
+  .property-desclaimer {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3125rem;
+  }
+
+  .property-desc {
+    margin-bottom: 2.5rem;
+  }
+
+  .features-div {
+    padding-bottom: 2.5rem !important;
+  }
+
+  .property-desc h4 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .property-desc p {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  .property-desc li {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+  /*Buy Units Modal*/
+  #unitsModal {
+    padding: 2rem 0.7rem !important;
+  }
+
+  #unitsModal .modal-content {
+    transition: 0s !important;
+    background: #fff !important;
+    border-radius: 1rem;
+    padding: 0.3rem !important;
+  }
+
+  #unitsModal .modal-title {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .last-form-mb {
+    margin-bottom: 2rem;
+  }
+
+  /* Payment Page */
+  .grid-container-contact-div2 {
+    display: block;
+    padding: 0 !important;
+  }
+
+  .grid-container-contact-div2 .img-holder3 {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 24.5625rem;
+    padding: 1.9375rem var(--div-padding) 5.13rem;
+  }
+
+  .img-holder3 .signup-holder h2 {
+    font-size: 2rem !important;
+  }
+
+  .payment-options-div {
+    margin-bottom: 2.5rem !important;
+  }
+
+  .grid-container-payment-div {
+    display: block;
+  }
+
+  .payment-bg {
+    margin-top: 0rem;
+    height: 45.75rem;
+  }
+
+  .payment-radio {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .payment-form {
+    background: #fff;
+  }
+
+  /* PORTFOLIO PAGE */
+  .portfolio-div {
+    padding: 1.5rem 1.5rem 3.18rem;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-div h4 {
+    margin-bottom: 3rem;
+  }
+
+  .my-portfolio-div {
+    min-width: 200% !important;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+    border: 1px solid #E7EBED;
+  }
+
+  .portfolio-img-holder {
+    height: 2.8125rem;
+  }
+
+  .protfolio-info-div h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .tr-details th {
+    padding-right: 0.2rem !important;
+    width: 0% !important;
+  }
+
+  .my-portfolio-div td {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #000;
+  }
+
+  .price-td {
+    padding-top: 2.85rem !important;
+  }
+
+  .drag-table {
+    padding: 0 0 0 9.62rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .drag-table p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #051722;
+  }
+
+
+  /*.form-holder-div{
+  padding: 1.5rem 0 0rem 1.5rem !important;
+}*/
+
+  /* SMART INVESTING PAGE */
+  #portfolio-div {
+    margin-bottom: 2.5rem;
+  }
+
+  .portfolio-results-div .my-portfolio-div p,
+  .my-portfolio-div2 p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .portfolio-results-div .my-portfolio-div2 {
+    height: 42vh;
+  }
+
+  #myChart {
+    margin-bottom: 0 !important;
+  }
+
+  #chart-btn {
+    display: none;
+    color: #0D344E;
+    text-align: left !important;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    text-decoration-line: underline;
+  }
+
+  .portfolio-results-div h4 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-results-div h6 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .recommendation-holder button {
+    width: 100%;
+  }
+
+  .portfolio-results-div .drag-table {
+    padding: 1rem 0 0 9.62rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .smart-cal-form {
+    background: #fff !important;
+  }
+
+  /* Referral */
+  .referral-div button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Larger screens, laptops */
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
+  /*body{
+		background: yellow !important;
+	}*/
+
+  :root {
+    --div-padding: 17.5rem;
+    --special-tools-h2: 16.7rem;
+  }
+
+  /*:root{
+	  --div-padding: 10.5rem;
+	  --special-tools-h2: 9.7rem;
+	}*/
+
+  .main {
+    margin-top: 8.84vh !important;
+  }
+
+
+  /* NAVBAR */
+  .main-nav .nav-links ul li {
+    padding: 0.5rem 0.8rem 0;
+  }
+
+  .main-nav .nav-links ul li a {
+    font-size: 1.425rem;
+  }
+
+  .main-nav .dropdown button {
+    font-size: 1.425rem !important;
+    line-height: 2.0875rem;
+  }
+
+  .main-nav .dropdown .dropdown-menu li a {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+
+
+  /*  FOOTER */
+  .footer-div {
+    position: relative;
+    min-height: 25rem;
+    padding: 4.328125rem 0 0;
+  }
+
+  .footer-logo .logo-footer {
+    width: 19.03959vw;
+    /* 259.2023rem */
+    height: 11.29825vh;
+    /* 70rem */
+    margin-bottom: 2.484375rem;
+  }
+
+  .footer-logo p {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .socials-media a img {
+    width: 2.20364vw;
+    /* 30rem */
+    height: 4.84211vh;
+    /* 30rem */
+  }
+
+  .socials-media a img:hover {
+    width: 2.14182vw;
+    /* 40rem */
+    height: 3.45614vh;
+    /* 40rem */
+  }
+
+  .footer-links h6 {
+    font-size: 1.7rem;
+  }
+
+  .footer-links li a {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .footer-links p,
+  .footer-links a {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .copywrite-div p {
+    color: white;
+    font-size: 1.075rem;
+    line-height: 1.5125rem;
+  }
+
+  /*Home page*/
+  .hero-div-info .path-img {
+    width: 14.69091vw;
+    /* 200rem */
+  }
+
+  .hero-div-info h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero-div-info p {
+    font-size: 1.425rem;
+    line-height: 2.075rem;
+  }
+
+  .hero-div-info button {
+    font-size: 1.425rem;
+    line-height: 1.8875rem;
+  }
+
+  /*who are we section*/
+  .who-are-we-info {
+    padding-top: 3.6875rem !important;
+  }
+
+  .who-are-we-info h2 {
+    font-size: 6.375rem;
+  }
+
+  .who-are-we-info h6 {
+    margin-top: -10%;
+    font-size: 2.5rem;
+  }
+
+  .who-are-we-info p {
+    font-size: 1.5rem;
+    line-height: 2.1875rem;
+  }
+
+  /* Why You Should Invest */
+  .grid-container-why-invest {
+    display: grid;
+    gap: 2%;
+    /* 1.25rem */
+    grid-template-columns: 23.6% 23.6% 23.6% 23.6%;
+    /* auto auto auto auto */
+  }
+
+  .why-invest {
+    width: 100%;
+  }
+
+  .why-invest h2 {
+    font-size: 5rem;
+  }
+
+  .why-invest h6 {
+    font-size: 1.3125rem;
+  }
+
+  .why-invest-detail p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  /* Browse Hub */
+  .course-img-holder {
+    height: 30.9vh;
+    /*  17.0625rem*/
+  }
+
+  .course-div h5 {
+    font-size: 1.45rem;
+    line-height: 2.275rem;
+  }
+
+  .course-div .course-description {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .course-div h6 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .course-details button {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  /* Subscription section */
+  .subscription-holder {
+    padding-top: 4.8rem !important;
+    padding-right: 3.13rem;
+  }
+
+  .subscription-holder h2 {
+    font-size: 3rem;
+    line-height: 4.25rem;
+    color: #051722;
+  }
+
+  .subscription-holder p {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+    margin-bottom: 5.7%;
+  }
+
+  .subscription-holder .filled-btn-lg {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+  }
+
+  .subscription-pix {
+    width: 100%;
+    height: 61vh;
+    /* 70.1vh 28.125rem*/
+  }
+
+  /*Offer Personal Finance section*/
+  .personal-finance-div {
+    max-height: 89.5vh;
+    /*  34.5rem*/
+    padding-top: 7.03rem !important;
+    padding-bottom: 7.03rem !important;
+  }
+
+  .personal-finance-info {
+    width: 55%;
+    max-height: 54.5vh;
+    /* 20.4375rem */
+  }
+
+  .personal-finance-info h2 {
+    font-size: 3rem;
+    line-height: 4.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .personal-finance-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .personal-finance-info button {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+  }
+
+  /* Investment corner */
+  .investment-div h5 {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .investment-div h6 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .last-h6 {
+    margin-bottom: 1.7rem;
+  }
+
+  .property-img {
+    height: 34.6vh;
+    /* 19.0625rem */
+  }
+
+  .home-invest .see-investments {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+
+  /* Special tools section */
+  .tools-img {
+    height: 60vh;
+  }
+
+  .tools-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .special-tools-info h5 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .special-tools-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .special-tools-info button {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+    word-wrap: break-word;
+  }
+
+  .roi-info h5 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .roi-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .roi-info button {
+    font-size: 1.625rem;
+    line-height: 2.1875rem;
+    word-wrap: break-word;
+  }
+
+  /* COURSES PAGE */
+  .courses-list-div h2 {
+    font-size: 2.2rem;
+  }
+
+  .courses-list-div li a {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .last-lesson-div h5 {
+    font-size: 1.7rem;
+  }
+
+  .last-lesson-div h6 {
+    font-size: 1.45rem;
+    line-height: 2.075rem;
+  }
+
+  .last-lesson-div p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .continue-btn-div .filled-btn-lg {
+    font-size: 1.2625rem;
+    line-height: 1.8875rem;
+  }
+
+  /*available-courses section*/
+  .course-div2 h5 {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .course-div2 .course-description {
+    font-size: 1.075rem;
+    line-height: 1.5125rem;
+  }
+
+  .course-div2 h6 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .course-details2 button {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  /* MODULES PAGE  */
+  .module h5 {
+    font-size: 1.45rem;
+    line-height: 2.075rem;
+  }
+
+  .module li a {
+    font-size: 1.325rem;
+    line-height: 2.0875rem;
+  }
+
+  /*  LESSON PAGE */
+  .lesson-details-div p {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .grid-container-lesson-row {
+    gap: 17rem;
+  }
+
+  .prev-div {
+    padding: 0.5rem 1.05rem 0.5rem !important;
+  }
+
+  .prev-div h5 {
+    color: #051722;
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .prev-div h6 {
+    font-size: 1.125rem;
+    line-height: 1.8875rem;
+  }
+
+  .continue-btn-div button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1.1225rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+  }
+
+  /* CONTACT US PAGE */
+  .contact-details h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-details p,
+  .contact-details address,
+  .contact-details a {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .form-details label,
+  .form-details h6 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .form-details sup {
+    font-size: 1.3rem;
+  }
+
+  .form-details button {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  /*  SIGNUP PAGE*/
+  .signup-holder h2 {
+    font-size: 3.5rem;
+  }
+
+  .extra-signup-detail h5 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  /* COMPOUND CALCULATOR */
+  .signup-holder2 h2 {
+    font-size: 3.5rem;
+  }
+
+  .disclaimer-div h5 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #051722;
+  }
+
+  .disclaimer-div p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #051722;
+  }
+
+  .learn-video-holder h5 {
+    font-size: 2.5rem;
+  }
+
+  .disclaimer-div button {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+  .learn-video-holder button {
+    font-size: 1.225rem;
+    line-height: 1.8875rem;
+  }
+
+
+  /* ABOUT US PAGE */
+  .about-div-info p {
+    font-size: 1.45rem;
+    line-height: 2.075rem;
+  }
+
+  .users-counter-holder {
+    padding-left: 29.35% !important;
+  }
+
+  .testimonial-holder {
+    height: 61.9vh;
+    /* 34.1875rem */
+  }
+
+  .testimonial-holder-div {
+    width: 55.8vw;
+    margin-left: 12.0vw;
+  }
+
+  .quote-div {
+    padding-top: 4%;
+  }
+
+  .testimony {
+    height: 38vh;
+    /* 21.0625rem */
+  }
+
+  .myTestimony p {
+    font-size: 1.2rem;
+    line-height: 1.8875rem;
+  }
+
+  .myTestimony h6 {
+    font-size: 1.7rem;
+  }
+
+  /* Meet the Team */
+  .team-member {
+    height: 48vh;
+    /* 20.6875rem */
+  }
+
+  .member-info {
+    padding: 0.375rem 0.5rem;
+    border-radius: 0.625rem 0 0.625rem 0.625rem;
+  }
+
+  .member-info h5 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .member-info h6 {
+    font-size: 1.075rem;
+    line-height: 1.3125rem;
+  }
+
+  .consultation-div-holder p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .instruction-div h5 {
+    font-size: 1.45rem;
+    line-height: 2.075rem;
+  }
+
+  .instruction-div p {
+    font-size: 1.075rem;
+    line-height: 1.5125rem;
+  }
+
+  .arrowl {
+    margin-left: 6vw;
+    /* 6.75rem */
+  }
+
+  .consultation-div-holder button {
+    font-size: 1.325rem;
+    line-height: 1.8875rem;
+  }
+
+
+  /* Blog */
+  .post-details h6 {
+    font-size: 0.95rem;
+    line-height: 1.325rem;
+  }
+
+  .post-details h5 {
+    font-size: 1.7rem;
+  }
+
+  .post-details p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .post-details button {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  /* Blog Post Page */
+  .blog-post-holder h6 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .blog-post-details h6 {
+    font-size: 0.95rem;
+    line-height: 1.325rem;
+  }
+
+  .blog-post-details h3 {
+    font-size: 2.2rem;
+  }
+
+  .blog-post-details p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .blog-post-details h4 {
+    font-size: 1.45rem;
+    line-height: 2.075rem;
+  }
+
+  .no-pt h4 {
+    font-size: 1.7rem;
+  }
+
+
+
+
+
+
+
+}
+
+
+/* Smaller screens, laptops */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /*body{
+		background: red !important;
+	}*/
+
+  :root {
+    --div-padding: 4.5rem;
+    --special-tools-h2: 4rem;
+  }
+
+  /* NAVBAR */
+  .main-nav .nav-links ul li a {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .main-nav .dropdown button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .main-nav .dropdown .dropdown-menu li a {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .account_btn {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  /*  FOOTER */
+  .footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .footer-links h6 {
+    font-size: 1.4rem;
+  }
+
+  .footer-links li a {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .footer-links p,
+  .footer-links a {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .copywrite-div p {
+    font-size: 0.775rem;
+    line-height: 1.2125rem;
+  }
+
+
+  /*Home page*/
+  .hero-div-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-div-info p {
+    font-size: 1.025rem;
+    line-height: 1.775rem;
+  }
+
+  .hero-div-info button {
+    font-size: 1.025rem;
+    line-height: 1.5875rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 4.62rem;
+    color: #051722;
+  }
+
+  .who-are-we-info h2 {
+    font-size: 5.375rem;
+  }
+
+  .who-are-we-info h6 {
+    font-size: 1.5rem;
+  }
+
+  .who-are-we-info p {
+    font-size: 0.9rem;
+    line-height: 1.5875rem;
+  }
+
+  .why-invest h2 {
+    font-size: 4.5rem;
+  }
+
+  .why-invest h6 {
+    font-size: 1.3125rem;
+    font-weight: 600;
+    color: #051722;
+  }
+
+  .course-img-holder {
+    height: 40.06316vh;
+  }
+
+  .course-div h5 {
+    font-size: 1.15rem;
+  }
+
+  .course-div .course-description {
+    font-size: 0.9rem;
+  }
+
+  .course-div h6 {
+    font-size: 0.9rem;
+  }
+
+  .course-details button {
+    font-size: 1.025rem;
+  }
+
+  .subscription-holder {
+    padding-top: 6.5% !important;
+    padding-right: 9.13rem;
+  }
+
+  .subscription-holder h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+
+  .subscription-holder p {
+    font-size: 1.025rem;
+    line-height: 1.6875rem;
+  }
+
+  .subscription-holder .filled-btn-lg {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.6875rem;
+  }
+
+  .personal-finance-info h2 {
+    font-size: 2rem;
+    line-height: 3.25rem;
+  }
+
+  .personal-finance-info p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .personal-finance-info button {
+    font-size: 1.025rem;
+    line-height: 1.5875rem;
+  }
+
+  .home-h2 {
+    font-size: 2rem !important;
+  }
+
+  .home-invest .see-investments {
+    font-size: 1.025rem;
+    line-height: 1.5875rem;
+  }
+
+  .property-img {
+    height: 42.5vh;
+  }
+
+  .investment-div h5 {
+    font-size: 1.025rem;
+    line-height: 1.5875rem;
+  }
+
+  .investment-div h6 {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .investment-div button {
+    font-size: 1.025rem;
+    line-height: 1.5875rem;
+  }
+
+  .special-tools-div h2 {
+    font-size: 2rem;
+  }
+
+  .special-tools-info {
+    padding: 5.375rem var(--div-padding) 5.375rem 2.4375rem;
+  }
+
+  .special-tools-info h5 {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .special-tools-info p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .special-tools-info button {
+    color: #0D344E;
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .roi-info {
+    padding: 5.375rem 1rem 5.375rem var(--div-padding);
+  }
+
+  .roi-info h5 {
+    font-size: 1.52rem;
+    line-height: 2.4rem;
+  }
+
+  .roi-info p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .roi-info button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .investment-div-holder h2 {
+    font-size: 2.5rem;
+  }
+
+  .courses-list-div h2 {
+    font-size: 1.5rem;
+  }
+
+  .courses-list-div li a {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .last-lesson-div h5 {
+    font-size: 1.4rem;
+  }
+
+  .last-lesson-div h6 {
+    font-size: 1.15rem;
+    line-height: 1.775rem;
+  }
+
+  .last-lesson-div p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .continue-btn-div button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .grid-container-avail-courses {
+    gap: 0.7rem;
+  }
+
+  .course-img-holder2 {
+    height: 9.5625rem;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .course-div2 h5 {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .course-div2 .course-description {
+    font-size: 0.775rem;
+    line-height: 1.2125rem;
+  }
+
+  .course-div2 h6 {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .course-details2 button {
+    font-size: 0.925rem;
+    font-weight: 600;
+    line-height: 1.5875rem;
+  }
+
+  .module h5 {
+    font-size: 1.15rem;
+    line-height: 1.775rem;
+  }
+
+  .module li a {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .prev-div h5 {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .prev-div h6 {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .contact-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-details p,
+  .contact-details address,
+  .contact-details a {
+    line-height: 1.4rem;
+  }
+
+  .form-details label,
+  .form-details h6 {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .form-details button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .signup-holder h2 {
+    font-size: 2.5rem;
+  }
+
+  .extra-signup-detail h5 {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .signup-holder2 h2 {
+    font-size: 2.5rem;
+  }
+
+  .disclaimer-div h5 {
+    font-size: 1.56rem;
+  }
+
+  .disclaimer-div p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .learn-video-holder h5 {
+    font-size: 1.5rem;
+  }
+
+  .disclaimer-div button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+  .learn-video-holder button {
+    font-size: 0.925rem;
+    line-height: 1.5875rem;
+  }
+
+
+
+
+
+}
+
+
+/* Smaller laptops (notebook) */
+@media screen and (min-width: 1201px) and (max-width: 1340px) {
+  /*body{
+		background: red !important;
+	}*/
+
+  :root {
+    --div-padding: 4.5rem;
+    --special-tools-h2: 4rem;
+  }
+
+
+
+  .course-img-holder {
+    height: 40.06316vh;
+  }
+
+  .property-img {
+    width: 100%;
+    height: 40.5vh;
+    /* 19.0625rem */
+    padding: 0;
+  }
+
+  .testimonial-holder-div {
+    width: 70.4vw;
+    margin-left: 13.25vw;
+  }
+
+  .password-holder .password-input {
+    width: 99.0%;
+    margin-bottom: 2.5rem;
+  }
+
+
+
+
+
+
+}
+
+/* Extra large Screens, TV */
+@media screen and (min-width: 1901px) {
+  /*body{
+		background: pink !important;
+	}*/
+
+  :root {
+    --div-padding: 15%;
+    --special-tools-h2: 14.5%;
+  }
+
+  .main {
+    margin-top: 3.9% !important;
+    /* 11.2vh */
+  }
+
+  .course-img-holder {
+    height: 30.06316vh;
+  }
+
+  .subscription-holder {
+    padding-top: 10.5% !important;
+  }
+
+  .subscription-pix {
+    height: 55vh;
+  }
+
+  .property-img {
+    width: 100%;
+    height: 35.5vh;
+    /* 19.0625rem */
+    padding: 0;
+  }
+
+  .users-counter-holder {
+    padding-left: 42.5625rem !important;
+  }
+
+  .testimonial-holder-div {
+    width: 53.6vw;
+    margin-left: 13.25vw;
+  }
+
+  .team-member {
+    height: 48vh;
+    padding: 35.5625vh 1.3125rem 1.3125rem !important;
+  }
+
+  .instruction-div {
+    height: 22vh;
+    /* 10.6875rem */
+  }
+
+  .password-holder .password-input {
+    width: 99.0%;
+    margin-bottom: 2.5rem;
+  }
+
+  .tools-img {
+    height: 55vh;
+  }
+
+  .tools-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .special-tools-info {
+    padding: 7.375rem 30% 7.375rem 2.4375rem;
+  }
+
+  .roi-info {
+    padding: 7.375rem 1rem 7.375rem 30%;
+  }
+
+  .courses-list-div-holder {
+    padding: 0;
+    padding-left: 47% !important;
+  }
+
+  .courses-container-div {
+    padding-right: 22% !important;
+  }
+
+
+
+
+
+
+
+
+
+}

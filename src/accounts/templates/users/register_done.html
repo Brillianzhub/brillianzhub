@@ -1,0 +1,68 @@
+<!-- You are one step away! Please check your email to complete your registration. -->
+
+
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+{% include 'snippets/header.html' %}
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="bradcam_text text-center">
+                    <h3>Account Created</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  -->
+
+<!-- ================ contact section start ================= -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Welcome {{ new_user.first_name }}!</h2>
+            </div>
+            <div class="col-lg-8">
+
+                <p> Your account has been successfully created. Now you can
+                    <a href="{% url 'accounts:login' %}">log in</a>.
+                </p>
+
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-home"></i></span>
+                    <div class="media-body">
+                        <h3>Head Office</h3>
+                        <p>Owerri, Nigeria.</p>
+                    </div>
+                </div>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                    <div class="media-body">
+                        <h3>Official Working Days</h3>
+                        <p>Mon to Fri 9am to 4pm</p>
+                    </div>
+                </div>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-email"></i></span>
+                    <div class="media-body">
+                        <h3>+2348060473170</h3>
+                        <p>Send us whatsapp message anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================ contact section end ================= -->
+
+
+{% endblock %}

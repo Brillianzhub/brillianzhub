@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    @media (min-width: 768px) {
+        .login-style {
+            max-width: 70%;
+        }
+    }
+</style>
+
+
+<div class="container">
+    <div class="row" style="padding-top:100px;">
+        <div class="col-lg-12 login-style ">
+            <div class="#">
+                {% if key %}
+                <h1 class='my-5 py-3'>Activation Error. Please try again.</h1>
+                {% else %}
+                <h1 class='my-5 py-3'>Reactivate your email. Please try again.</h1>
+                {% endif %}
+
+            </div>
+            <div class="#">
+                <form method='POST' action=''>{% csrf_token %}
+                    {{ form.as_p }}
+                    <br><button type="submit" class="btn btn-primary">Resend Activation</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

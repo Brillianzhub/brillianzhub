@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+
+<main class="main no-main">
+    <div class="container-fluid div-holder home-nav-bg-green contact-div nav-clearance c">
+        <div class="grid-container-contact-div div-padding">
+            <div class="grid-item-contact-div contact-bg first-div-deatils img-holder b">
+                <div class="container-fluid contact-details">
+                    <h2>Get in touch with us</h2>
+                    <address>
+                        <img src="{% static 'icons/venue.svg' %}" class="img-fluid">&nbsp;
+                        Borsigstr. 5, Feuerbach, Stuttgart, Germany.
+                    </address>
+
+                    <p class="p-0">
+                        <a href="mailto:brillianzhub@gmail.com">
+                            <img src="{% static 'icons/at.svg' %}" class="img-fluid">&nbsp;
+                            brillianzhub@gmail.com
+                        </a>
+
+                    </p>
+
+                    <p class="p-0 phone-number-link">
+                        <a href="tel:+49 1590 4976605">
+                            <img src="{% static 'icons/phone.svg' %}" class="img-fluid">&nbsp;
+                            +49 1590 4976605
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid-item-contact-div form-holder-div home-nav-bg-green p-0 b">
+                <div class="container-fluid form-details c">
+
+
+
+
+
+                    <form action="" method="post">{% csrf_token %}
+                        <input type="hidden" name="csrfmiddlewaretoken"
+                            value="3zJU6NuydsUlhKPUH5t9EpzsupfynPfoh38psrvcqeYicdpbKnw0VIRweDin83RY">
+
+                        <div class="row style-form form-mb">
+                            <div class="col-6">
+                                <label for="id_first_name">First name<sup>*</sup></label>
+                                <input type="text" name="first_name" class="form-control" placeholder="Your First Name"
+                                    maxlength="100" required id="id_first_name">
+                            </div>
+                            <div class="col-6">
+                                <label for="id_last_name">Last name<sup>*</sup></label>
+                                <input type="text" name="last_name" class="form-control" placeholder="First Name"
+                                    maxlength="100" required id="id_last_name">
+                            </div>
+                        </div>
+
+                        <div class="style-form form-mb">
+                            <label class="form-label" for="id_sender">Email address<sup>*</sup></label>
+                            <input type="email" name="email_address" class="form-control"
+                                placeholder="Enter a valid email address" maxlength="254" required
+                                id="id_email_address">
+                        </div>
+
+                        <div class="style-form form-mb">
+                            <label class="form-label" for="id_subject">Subject</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" maxlength="50"
+                                required id="id_subject">
+                        </div>
+
+                        <div class="form-floating style-form  form-mb">
+                            <h6>Message</h6>
+
+                            <textarea name="message" cols="80" rows="6" class="form-control" placeholder="Message"
+                                style="height: 8em;" required id="id_message">
+                                </textarea>
+                        </div>
+
+                        <p class="text-end mb-0">
+                            <button type="submit" name="button" class="filled-btn-lg ">
+                                Submit
+                            </button>
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main> <br />
+
+
+{% endblock %}
+
+<form action="" method="post">{% csrf_token %}
+
+    {{ form.non_field_errors }}
+
+    <div class="row style-form form-mb">
+        <div class="col-6">
+            <label for="id_first_name">First name<sup>*</sup></label>
+            <input type="text" class="form-control" name="first_name" placeholder="Your first name"
+                aria-label="First name" maxlength="100" required id="id_first_name">
+        </div>
+
+        <div class="col-6">
+            <label for="id_last_name">Last name<sup>*</sup></label>
+            <input type="text" class="form-control" name="last_name" placeholder="Your last name" aria-label="Last name"
+                maxlength="100" required id="id_last_name">
+        </div>
+    </div>
+
+    <div class="style-form form-mb">
+        <label class="form-label" for="id_sender">Email address<sup>*</sup></label>
+        <input type="email" class="form-control" name="email_address" placeholder="Enter a valid email address"
+            maxlength="254" required id="id_sender">
+    </div>
+
+    <div class="style-form form-mb">
+        <label class="form-label" for="id_subject">Subject</label>
+        <input type="text" name="subject" class="form-control" placeholder="Subject" maxlength="50" required
+            id="id_subject">
+    </div>
+
+    <div class="form-floating style-form  form-mb">
+        <h6>Message</h6>
+
+        <textarea class="form-control" placeholder="Type your message" id="floatingTextarea"></textarea>
+    </div>
+
+    <p class="text-end mb-0">
+        <button type="submit" name="button" class="filled-btn-lg ">
+            Submit
+        </button>
+    </p>
+</form>

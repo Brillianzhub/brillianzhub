@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+{% include 'base/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<main class="main no-main">
+    <div class="container-fluid home-nav-bg-green contact-div nav-clearance c">
+        <div class="grid-container-contact-div div-padding">
+            <div class="grid-item-contact-div signup-bg first-div-deatils img-holder b">
+                <div class="container-fluid signup-holder">
+                    <h2>Create your <br>account here</h2>
+                </div>
+            </div>
+
+            <div class="grid-item-contact-div form-holder-div home-nav-bg-green p-0 b">
+                <div class="container-fluid form-details c">
+
+                    <form action="{% url 'accounts:register' %}" method="post">
+                        {% csrf_token %}
+                        {{ user_form.non_field_errors }}
+
+                        <div class="style-form form-mb">
+                            <label for="id_email" class="form-label">Email address<sup>*</sup></label>
+                            <input type="email" class="form-control" name="email" required id="id_email"
+                                placeholder="Enter a valid email address" aria-label="Email address">
+                        </div>
+
+                        <div class="style-form password-holder form-mb">
+                            <label class="form-label" for="id_password">Password<sup>*</sup></label>
+                            <input type="password" name="password" autocomplete="current-password"
+                                class="password-input" required id="id_password">
+                            <i class="fa fa-eye" id="togglePassword"></i>
+                        </div>
+
+                        <div class="style-form password-holder mb-5">
+                            <label for="id_password2" class="form-label">Confirm Password<sup>*</sup></label>
+                            <input type="text" name="password2" required id="id_password2"
+                                autocomplete="current-password" class="password-input">
+                            <i class="fa fa-eye" id="togglePassword"></i>
+                        </div>
+
+                        <p class="text-end mt-5 mb-0">
+                            <button type="submit" class="filled-btn-lg ">
+                                Create Account
+                            </button>
+                        </p>
+                    </form>
+
+                </div>
+
+                <div class="container-fluid extra-signup-detail p-0">
+                    <h5>
+                        Do you have an account?
+                        <a href="{% url 'accounts:login' %}">
+                            Sign in here
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
